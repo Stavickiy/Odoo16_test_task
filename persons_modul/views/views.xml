@@ -1,0 +1,64 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="persons_modul_list_view">
+            <field name="name">persons_modul.tree</field>
+            <field name="model">persons_modul.person</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="first_name"/>
+                    <field name="last_name"/>
+                    <field name="birthday"/>
+                    <field name="age"/>
+                    <field name="sex"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="persons_modul_action_window">
+            <field name="name">Persons</field>
+            <field name="res_model">persons_modul.person</field>
+        </record>
+
+        <menuitem sequence="0" id="menu_persons" name="Persons"/>
+        <menuitem id="menu_person_content" parent="menu_persons"
+                    name="Person Content"/>
+        <menuitem id="menu_persons_person"
+                    parent="menu_person_content"
+                    action="persons_modul_action_window"/>
+
+
+
+        <record id="menu_persons_v2" model="website.menu">
+            <field name="name">Persons</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">10</field>
+            <field name="is_mega_menu">True</field>
+            <field name="mega_menu_content" type="html">
+                <section class="persons-section">
+                    <div class="container">
+                        <div class="row py-4">
+                            <div class="col-lg-12">
+                                <h3 class="mb-3">Manage Persons</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="/persons" class="text-dark d-flex align-items-center text-decoration-none">
+                                            <span class="fa fa-caret-right mr-2"></span>
+                                            <span>Person List</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/persons/add" class="text-dark d-flex align-items-center text-decoration-none">
+                                            <span class="fa fa-caret-right mr-2"></span>
+                                            <span>Create Person</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,38 @@
+<odoo>
+<!--    <data noupdate="1">-->
+<!--        <record id="person_1" model="persons_modul.person">-->
+<!--            <field name="first_name">John</field>-->
+<!--            <field name="last_name">Doe</field>-->
+<!--            <field name="birthday">1990-05-15</field>-->
+<!--            <field name="sex">male</field>-->
+<!--        </record>-->
+
+<!--        <record id="person_2" model="persons_modul.person">-->
+<!--            <field name="first_name">Jane</field>-->
+<!--            <field name="last_name">Smith</field>-->
+<!--            <field name="birthday">1985-08-20</field>-->
+<!--            <field name="sex">female</field>-->
+<!--        </record>-->
+
+<!--        <record id="person_3" model="persons_modul.person">-->
+<!--            <field name="first_name">Alex</field>-->
+<!--            <field name="last_name">Taylor</field>-->
+<!--            <field name="birthday">1992-11-30</field>-->
+<!--            <field name="sex">non_binary</field>-->
+<!--        </record>-->
+
+<!--        <record id="person_4" model="persons_modul.person">-->
+<!--            <field name="first_name">Emily</field>-->
+<!--            <field name="last_name">Brown</field>-->
+<!--            <field name="birthday">2000-03-10</field>-->
+<!--            <field name="sex">female</field>-->
+<!--        </record>-->
+
+<!--        <record id="person_5" model="persons_modul.person">-->
+<!--            <field name="first_name">Michael</field>-->
+<!--            <field name="last_name">Wilson</field>-->
+<!--            <field name="birthday">1978-06-25</field>-->
+<!--            <field name="sex">male</field>-->
+<!--        </record>-->
+<!--    </data>-->
+</odoo>
